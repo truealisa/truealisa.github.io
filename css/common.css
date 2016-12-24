@@ -1,60 +1,231 @@
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 	background-color: #eee;
+	font-family: 'Sintony', sans-serif;
 }
 
-#main-photo {
-	max-width: 50%;
+h2 {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+/*---------- HEADER ----------*/
+
+header .navbar {
+	margin-bottom: 0;
+}
+
+header .navbar .nav {
+	float: right;
+}
+
+/*---------- MAIN ----------*/
+/*---------- INTRODUCTION ----------*/
+
+main #main {
+	background-image: url(../img/Website-Design-and-Development.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 -170px;
+	width: 100%;
+	height: 600px;
+	margin:0;
+}
+
+main #main .main-info {
+	background-color: rgba(0,0,0,0.9);
+	height: auto;
+	min-height: 300px;
+	width:100%;
+	margin-top: 200px;
+	position: relative;
+}
+
+main #main .main-info img {
+	max-width: 100%;
 	height: auto;
 	display: block;
-	float: right;
-	margin-right: 30px;
-	margin-top: 15%;
-	margin-left: 200px;
-}
-
-.main-text-box {
-	margin: 0 auto;
-	display: block;
-	margin-right: 200px;
 	position: absolute;
-	margin-top: 10%;
+	left:43%;
+	top:-45%;
 }
 
-.main-box p {
-	font-size: 20px;
-	font-style: italic;
+main #main .main-info .text_cont_inner {
+	height: 100%; 
+	word-wrap: break-word;
+	letter-spacing: 0px; 
+	color: #eee;
+	text-shadow: 2px 0px 2px #000;
+	font-size: 22px;
+	padding: 100px 50px 60px;
+	text-align: center;
+	font-family: 'Consolas', Monospace, 'Menlo Regular', serif;
+}
+
+main #main .main-info .after:after {
+	content:'_'
+}
+
+/*---------- SKILLS ----------*/
+
+main #skills {
+	padding-top: 60px;
+	padding-bottom: 120px;
+	background-image: 
+      linear-gradient(213deg, transparent 80%, #666 80%),
+	   linear-gradient(147deg, transparent 80%, #666 80%);
+}
+
+main #skills h3 {
+	font-size: 35px;
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+
+main #skills .skill-wrapper {
+	padding: 10px;
+	font-size: 18px;
+	margin: 0;
+	text-align: center;
+} 
+
+main #skills .skill-logo {
+	width: 100px;
+	margin: 0 auto 20px;
+	display: block;
+}
+
+main #skills .skill-logo.bootstrap-logo {
+	width: 250px;
+}
+
+main #skills .skill-logo.jquery-logo {
+	width: 115px;	
+}
+
+main #skills .skill-logo.wp-logo {
+	width: 200px;	
+}
+
+/*---------- PORTFOLIO ----------*/
+
+#portfolio {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.portfolio-box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.portfolio-item {
+	max-width: 30%;
+	height:auto;
 	margin-top: 20px;
 }
 
-.main-text-box p.ta-r {
-	text-align: right;
+.portfolio-item img {
+	border: 2px solid #666;
+	border-radius: 10px;
 }
 
-@media screen and (max-width: 970px) {
-	.main-text-box {
-		margin-right: 100px;
-	}
+/*---------- CONTACTS ----------*/
 
-	#main-photo {
-		max-width: 75%;
-	}
+#contacts {
+	background-color: #CC9FB4;
+	padding-top: 60px;
 }
 
-@media screen and (max-width: 768px) {
-	body {
-		padding-top: 40px;
-	}
+#contacts h2 {
+	margin-bottom: 50px;
+}
 
-	#main-photo {
-		max-width: 200px;
-		float: none;
-		margin:0 auto;
-		display: block;
-	}
+.contacts-box {
+	min-height: 270px;
+	font-size: 20px;
+	padding-top: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
 
-	.main-text-box {
-		margin: 30px 50px 130px;
-		min-height: 300px;
-	}
+.contacts-box p {
+	margin-top: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.contacts-box .email:before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	display: block;
+	background-image: url(../img/gmail-icon.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: absolute;
+	left: -45px;
+}
+
+.contacts-box .skype:before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	display: block;
+	background-image: url(../img/skype-icon.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: absolute;
+	left: -41px;
+}
+
+.contacts-box .phone:before {
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	display: block;
+	background-image: url(../img/phone-icon.png);
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: absolute;
+	left: -42px;
+}
+
+/*---------- FOOTER ----------*/
+
+footer {
+	height: 55px;
+	background-color: #222;
+	color: #eee;
+	padding-top: 15px;
+}
+
+footer p {
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+footer span {
+	font-size: 21px;
+	vertical-align: top;
 }
