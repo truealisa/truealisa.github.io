@@ -92,7 +92,7 @@ $( document ).ready(function() {
 
 	$contactForm.submit(function(e) {
 		e.preventDefault();
-		var $submit = $('input:submit', $contactForm);
+		var $submit = $('button:submit', $contactForm);
 		var defaultSubmitText = $submit.val();
 
 		$.ajax({
