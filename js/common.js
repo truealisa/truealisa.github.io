@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 	/*--- live_typing text ---*/
 
-	$(function(){
+	/*$(function(){
 		var a = new String;
 		a = $('.text_cont_inner').text();
 		$('.text_cont_inner').text('');
@@ -13,9 +13,10 @@ $( document ).ready(function() {
 				$('.text_cont_inner').text($('.text_cont_inner').text()+a[j]);
 				j=j+1; 
 			} 
-			else {$('.text_cont_inner').removeClass('after')} 
+			else {$('.text_cont_inner').removeClass('after');
+					$('.button').css('opacity', '1')} 
 		},75);
-	});
+	});*/
 
 	/*--- scrolling ---*/
 
