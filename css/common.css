@@ -171,9 +171,19 @@ main #skills .skill-logo.wp-logo {
 	margin-bottom: 50px;
 }
 
+#contacts .alert {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 34px;
+	height: 34px;
+	padding:0 10px;
+}
+
 .contacts-box {
 	min-height: 270px;
 	font-size: 20px;
+	margin-top: 20px;
 	padding-top: 50px;
 	display: -webkit-flex;
 	display: -moz-flex;
