@@ -102,11 +102,11 @@ $( document ).ready(function() {
 			data: $(this).serialize(),
 			dataType: 'json',
 			beforeSend: function() {
-			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+			$contactForm.append('<div class="alert alert--loading bg-warning">Sending message…</div>');
 			$submit.attr('disabled', true).val('Sending message…');
 		},
 		success: function(data) {
-			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+			$contactForm.append('<div class="alert alert--success bg-info">Message sent!</div>');
 			$submit.val('Message sent!');
 			setTimeout(function() {
 				$('.alert--success').remove();
@@ -115,7 +115,7 @@ $( document ).ready(function() {
 		},
 		error: function(err) {
 			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+			$contactForm.append('<div class="alert alert--error bg-danger">Ops, there was an error.</div>');
 			$submit.val('Ops, there was an error.');
 			setTimeout(function() {
 				$('.alert--error').remove();
