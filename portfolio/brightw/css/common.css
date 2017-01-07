@@ -1,0 +1,367 @@
+body {
+	font-family: 'open_sansregular';
+	background-image: url(../img/bg.png);
+}
+
+/*----- HEADER -----*/
+
+header {
+	height: 75px;
+	background-color: #fff;
+	margin-top: 7%;
+	box-shadow: 0 0 4px 1px rgba(126, 126, 126, 0.3);
+}
+
+.header-logo {
+	display: flex;
+ 	align-items: center;
+ 	height: 75px;
+}
+
+.header-logo a {
+	margin: 0 auto;
+}
+
+.header-logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.menu-trigger {
+	display: none;
+	color: #8d8c8c;
+	font-size: 1.285em;
+	line-height: 72px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	position: relative;
+}
+
+.menu-trigger:hover,
+.menu-trigger:focus {
+	text-decoration: none;
+	color: #8d8c8c;
+}
+
+nav:hover .menu-trigger:after {
+	content: "";
+	height: 1px;
+	width: 60px;
+	background-color: #D42819;
+	position: absolute;
+	top: 75%;
+	right: 50%;
+	transform: translateX(50%);
+	display: block;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-menu li {
+	display: block;
+	padding-right: 5%;
+}
+
+.nav-menu a {
+	color: #8d8c8c;
+	font-size: 1.285em;
+	line-height: 72px;
+	text-transform: uppercase;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+	text-decoration: none;
+	box-shadow: 0 1px 0 0 #D42819;
+}
+
+.social-links {
+	margin-top: 20px;
+}
+
+.social-links li {
+	height: 27px;
+	width: 27px;
+	background-image: url(../img/header-icon-set.png);
+	background-repeat: no-repeat;
+	padding: 0;
+}
+
+.social-links li:hover {
+	border-radius: 50%;
+	box-shadow: inset 0 0 5px 1px rgba(245, 5, 5, 0.7)
+}
+
+.social-links .fb-link {
+	background-position: 0px -1px;
+}
+
+.social-links .tw-link {
+	background-position: -31px -1px;
+}
+
+.social-links .drb-link {
+	background-position: -64px 0px;
+}
+
+.social-links .be-link {
+	background-position: -95px -1px;
+}
+
+.social-links .gpl-link {
+	background-position: -126px -1px;
+}
+
+.social-links .rss-link {
+	background-position: -158px 0px;
+}
+
+.social-links a {
+	width: 26px;
+	height: 26px;
+	display: block;
+	margin: 0;
+}
+
+/*----- MAIN CONTANT -----*/
+
+.main-title {
+	margin: 75px 40px 40px;
+	text-align: center;
+	font-size: 2.3em;
+	line-height: 1.4em;
+	color: #696969;
+}
+
+.main-title span {
+	color: #d42819;
+}
+
+.sections {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sections li {
+	padding: 0;
+	color: #8b8b8b;
+}
+
+.sections li a {
+	color: #8b8b8b;
+	text-transform: uppercase;
+}
+
+.sections li a:hover,
+.sections li a:focus {
+	text-decoration: none;
+	color: #d42819;
+}
+
+.galery {
+	margin: 0 40px;
+}
+
+.galery-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.galery-list .galery-item {
+	margin-top: 30px;
+	width: 23%;
+	min-width: 200px;
+}
+
+.galery-list .galery-item-name {
+	font-weight: bold;
+	font-size: 1em;
+	margin: 0;
+}
+
+.galery-list .galery-item-name a {
+	color: #696969;
+}
+
+.galery-list .galery-item-name a:hover {
+	color: #d42819;
+	text-decoration: none;
+}
+
+.galery-list .section {
+	color: #8b8b8b;
+	font-size: 0.85em;
+	margin-top: 3px;
+}
+
+.galery-list .galery-img {
+	position: relative;
+	display: block;
+	height: 173px;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 4px 1px rgba(126, 126, 126, 0.3);
+}
+
+.zoom-icon {
+	position: absolute;
+	height: auto;
+	max-width: 100%;
+	right: 3%;
+	bottom: -15%;
+}
+
+.modal-body {
+	height: 300px;
+}
+
+.pagination {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.paginator li {
+	border: 1px solid #8b8b8b;
+	border-radius: 3px;
+	width: 23px;
+	height: 23px;
+}
+
+.paginator li a {
+	color: #8b8b8b;
+	font-size: 12px;
+	width: 23px;	
+	height: 23px;
+	padding: 2px;
+	text-align: center;
+}
+
+.paginator li:nth-child(10) a,
+.paginator li:nth-child(11) a {
+	padding-left: 0;
+}
+
+.paginator li:hover,
+.paginator li:focus {
+	background-color: #fff;
+}
+
+.paginator li a:hover,
+.paginator li a:focus {
+	text-decoration: none;
+	font-weight: bold;
+	color: #d42819;
+}
+
+.paginator-btns-back {
+	margin-right: 8px;
+}
+
+.paginator-btns-forward {
+	margin-left: 4px;
+}
+
+.paginator-btn:hover img {
+	transform: scale(1.2);
+}
+
+/*----- FOOTER -----*/
+
+footer {
+	margin-top: 40px;
+}
+
+footer h4 {
+	font-size: 1.15em;
+	margin-bottom: 20px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 48px;
+	color: #454545;
+	box-shadow: 0 0 4px 1px rgba(126, 126, 126, 0.3);
+}
+
+footer p,
+footer a {
+	font-size: 0.85em;
+	line-height: 1.6em;
+	color: #454545;
+}
+
+.footer-box {
+	width: 85%;
+	padding: 0;
+	margin: 0 auto;
+	min-width: 265px;
+}
+
+.search {
+	padding-bottom: 20px;
+}
+
+.search input {
+	background-color: rgba(126,126,126, 0.15);
+	padding: 3px 5px;
+}
+
+.search input[type="search"]::-moz-placeholder {
+    color: rgba(200,0,0, 1); /* Цвет подсказывающего текста */
+    font-style: italic;
+    font-size: 1em;
+    font-weight: bold;
+   }
+   .search input[type="search"]::-webkit-input-placeholder { color: rgba(200,0,0, 1); font-style: italic; font-size: 1em; font-weight: bold; }
+   .search input[type="search"]:-ms-input-placeholder { color: rgba(200,0,0, 1); font-style: italic; font-size: 1em; font-weight: bold; }
+   .search input[type="search"]::-ms-input-placeholder { color: rgba(200,0,0, 1); font-style: italic; font-size: 1em; font-weight: bold; }
+   .search input[type="search"]::placeholder { color:rgba(200,0,0, 1); font-style: italic; font-size: 1em; font-weight: bold; } 
+
+.search input[type="submit"] {
+	color: #d42819;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.search-by-list {
+	display: inline-block;
+	width: 49%;
+	position: relative;
+	list-style-type: none;
+	padding-left: 0;
+	line-height: 2em;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.search-by-list:nth-of-type(2) {
+	top: -85px;
+	left: 20px;
+}
+
+.search-by-list li a {
+	font-style: italic;
+}
+
+.search-by-list li a:hover {
+	color:#d42819;
+}
