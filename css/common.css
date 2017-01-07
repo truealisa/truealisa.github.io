@@ -50,7 +50,6 @@ background-color: #080808;
 
 main #main {
 	background-image: url(../img/Website-Design-and-Development.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 -170px;
 	width: 100%;
@@ -121,6 +120,9 @@ main #skills {
 	padding-top: 60px;
 	padding-bottom: 160px;
 	background-image: 
+      -webkit-linear-gradient(237deg, transparent 80%, #666 80%),
+	   -webkit-linear-gradient(303deg, transparent 80%, #666 80%);
+	background-image: 
       linear-gradient(213deg, transparent 80%, #666 80%),
 	   linear-gradient(147deg, transparent 80%, #666 80%);
 }
@@ -164,13 +166,16 @@ main #skills .skill-logo.wp-logo {
 }
 
 .portfolio-box {
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	text-align: center;
 }
 
@@ -200,7 +205,8 @@ main #skills .skill-logo.wp-logo {
 #contacts .alert {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	line-height: 34px;
 	height: 34px;
 	padding:0 10px;
@@ -211,18 +217,22 @@ main #skills .skill-logo.wp-logo {
 	font-size: 1.43em;
 	margin-top: 20px;
 	padding-top: 50px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
 	-ms-align-items: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .contacts-box p {
@@ -238,7 +248,6 @@ main #skills .skill-logo.wp-logo {
 	height: 28px;
 	display: block;
 	background-image: url(../img/gmail-icon.png);
-	-webkit-background-size: contain;
 	background-size: contain;
 	position: absolute;
 	left: -45px;
@@ -251,7 +260,6 @@ main #skills .skill-logo.wp-logo {
 	height: 28px;
 	display: block;
 	background-image: url(../img/skype-icon.png);
-	-webkit-background-size: contain;
 	background-size: contain;
 	position: absolute;
 	left: -41px;
@@ -264,7 +272,6 @@ main #skills .skill-logo.wp-logo {
 	height: 28px;
 	display: block;
 	background-image: url(../img/phone-icon.png);
-	-webkit-background-size: contain;
 	background-size: contain;
 	position: absolute;
 	left: -42px;
@@ -314,6 +321,9 @@ footer span {
 		padding-top: 60px;
 		padding-bottom: 160px;
 	   background-image: 
+         -webkit-linear-gradient(240deg, transparent 85%, #666 85%),
+	      -webkit-linear-gradient(300deg, transparent 85%, #666 85%);
+	   background-image: 
          linear-gradient(210deg, transparent 85%, #666 85%),
 	      linear-gradient(150deg, transparent 85%, #666 85%);
 	}
@@ -330,7 +340,8 @@ footer span {
 		max-width: 300px;
 		display: block;
 		left: 50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		top: -150px; 
 	}
 
@@ -342,7 +353,8 @@ footer span {
 
 	main #main .main-info .button {
 		right: 50%;
-		transform: translateX(50%);
+		-webkit-transform: translateX(50%);
+		        transform: translateX(50%);
 	}
 
 	.portfolio-item {
@@ -376,6 +388,9 @@ footer span {
 
 	main #skills {
 		background-image: 
+         -webkit-linear-gradient(243deg, transparent 90%, #666 90%),
+	      -webkit-linear-gradient(297deg, transparent 90%, #666 90%);
+		background-image: 
          linear-gradient(207deg, transparent 90%, #666 90%),
 	      linear-gradient(153deg, transparent 90%, #666 90%);
 	}
@@ -394,6 +409,9 @@ footer span {
 @media screen and (max-width: 575px) {
 
 	main #skills {
+		background-image: 
+         -webkit-linear-gradient(250deg, transparent 95%, #666 95%),
+	      -webkit-linear-gradient(290deg, transparent 95%, #666 95%);
 		background-image: 
          linear-gradient(200deg, transparent 95%, #666 95%),
 	      linear-gradient(160deg, transparent 95%, #666 95%);
@@ -419,7 +437,9 @@ footer span {
 
 	.contacts-box {
 		-ms-align-items: flex-start;
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 		margin-left: 40px;
 	}
 }
