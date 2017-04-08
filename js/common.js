@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 	/*--- live_typing text ---*/
 
-	var width = $(window).width();
+	/*var width = $(window).width();
 	if (width > 767) {
 		$(function(){
 			var a = new String;
@@ -13,16 +13,16 @@ $( document ).ready(function() {
 			setInterval(function(){
 				if(j<c){
 					$('.text_cont_inner').text($('.text_cont_inner').text()+a[j]);
-					j=j+1; 
-				} 
+					j=j+1;
+				}
 				else {$('.text_cont_inner').removeClass('after');
-				$('.button').css('opacity', '1')} 
+				$('.button').css('opacity', '1')}
 			},75);
 		});
 	} else {
 		$('.button').css('opacity', '1');
 		$('.text_cont_inner').removeClass('after');
-	}
+	}*/
 
 	/*--- scrolling ---*/
 
