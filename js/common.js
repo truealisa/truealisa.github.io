@@ -1,29 +1,5 @@
 $( document ).ready(function() {
 
-	/*--- live_typing text ---*/
-
-	/*var width = $(window).width();
-	if (width > 767) {
-		$(function(){
-			var a = new String;
-			a = $('.text_cont_inner').text();
-			$('.text_cont_inner').text('');
-			var c=a.length;
-			j=0;
-			setInterval(function(){
-				if(j<c){
-					$('.text_cont_inner').text($('.text_cont_inner').text()+a[j]);
-					j=j+1;
-				}
-				else {$('.text_cont_inner').removeClass('after');
-				$('.button').css('opacity', '1')}
-			},75);
-		});
-	} else {
-		$('.button').css('opacity', '1');
-		$('.text_cont_inner').removeClass('after');
-	}*/
-
 	/*--- scrolling ---*/
 
 	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
@@ -109,25 +85,24 @@ $( document ).ready(function() {
 			dataType: 'json',
 			beforeSend: function() {
 			$contactForm.append('<div class="alert alert--loading bg-warning">Sending message…</div>');
-			$submit.attr('disabled', true).val('Sending message…');
+			$submit.attr('disabled', true);
 		},
 		success: function(data) {
 			$('.alert--loading').remove();
 			$contactForm.append('<div class="alert alert--success bg-info">Message sent!</div>');
-			$submit.val('Message sent!');
 			setTimeout(function() {
 				$('.alert--success').remove();
-				$submit.attr('disabled', false).val(defaultSubmitText);
+				$submit.attr('disabled', false);
+            $('form input[type="text"], form input[type="email"], form textarea').val("");
 			}, 5000);
 		},
 		error: function(err) {
 			$('.alert--loading').remove();
 			$contactForm.find('.alert--loading').hide();
-			$contactForm.append('<div class="alert alert--error bg-danger">Ops, there was an error.</div>');
-			$submit.val('Ops, there was an error.');
+			$contactForm.append('<div class="alert alert--error bg-danger">Ops, there was an error. Try again!</div>');
 			setTimeout(function() {
 				$('.alert--error').remove();
-				$submit.attr('disabled', false).val(defaultSubmitText);
+				$submit.attr('disabled', false);
 			}, 5000);
 		}
 		});
