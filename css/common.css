@@ -92,7 +92,6 @@ main #main .main-info .text_cont_inner {
 }
 
 main #main .main-info .button {
-	opacity: 0;
 	padding: 10px;
 	position: absolute;
 	display: inline-block;
