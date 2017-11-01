@@ -1,0 +1,82 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #eee no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Itim', cursive;
+}
+
+.window_bg {
+  background: url("https://s8.hostingkartinok.com/uploads/images/2017/03/7b93507b702e664c94e040470bc325eb.png") no-repeat center 0 fixed;
+  background-size: cover;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  background: url("https://s8.hostingkartinok.com/uploads/images/2017/03/5dc7dd4305e84b77c31c220e1e1a1173.png") no-repeat center 0;
+  background-size: 100%;
+  text-align: center;
+  min-width: 350px;
+  min-height: 330px;
+  color: #eee;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.time {
+  font-size: 2em;
+}
+
+.location,
+.weather {
+  font-size: 1.5em;
+  min-width: 100px;
+}
+
+span {
+  color: #FFEBC3;
+  position: absolute;
+  vertical-align: super;
+  font-size: 0.6em;
+  width: 50px;
+  cursor: pointer;
+}
+
+.author {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  font-size: 0.9em;
+  color: #eee;
+}
+
+.author a {
+  color: #eee;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}

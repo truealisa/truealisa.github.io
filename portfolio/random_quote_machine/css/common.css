@@ -1,0 +1,98 @@
+body {
+  background-image: url("http://cs.aasect.org/sites/cs.aasect.org/files/5%20President'sDesk%20.jpg");
+  background-size: 120%;
+  font-family: 'Handlee', cursive;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 10px #fff;
+}
+
+.work-block {
+  height: 370px;
+  width: 280px;
+  margin: auto 25% auto 0;
+  float: right;
+  position: relative;
+  background-image: url("http://thenehiphop.com/wp-content/uploads/2014/06/notebook-paper-background_2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.quote {
+  display: block;
+  height: 130px;
+  text-align: right;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 65%;
+  font-size: 18px;
+}
+
+.author {
+  font-size: 18px;
+  font-style: normal;
+  height: 40px;
+  position: absolute;
+  display: block;
+  right: 10%;
+  top: 65%;
+}
+
+button {
+  width: 38px;
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button#get-new-quote {
+  right: 7%;
+}
+
+button#tweet {
+  right: 18%;
+}
+
+button#get-new-quote img {
+  height: 18px;
+}
+
+button#tweet img {
+  height: 21px;
+}
+
+button#get-new-quote:hover img {
+  height: 20px;
+}
+
+button#tweet:hover img {
+  height: 23px;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-shadow: 2px 2px 10px #fff;
+  font-size: 18px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  -webkit-text-decoration: underlined;
+          text-decoration: underlined;
+}
