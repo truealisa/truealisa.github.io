@@ -3,6 +3,9 @@ function isMobile() {
 }
 
 if (!isMobile()) {
+
+	$('head').append('<link rel="stylesheet" href="plugins/revealator/fm.revealator.jquery.css">');
+
 /*
  Revealator jQuery Plugin
  Revealator is a jQuery-based plugin for adding effects to elements that enter the window. It's simple, and easy to use.
