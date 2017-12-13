@@ -75,7 +75,7 @@ if (navigator.geolocation) {
       $(".location").html(weatherInfo.name + ", " + weatherInfo.sys.country);
       tempK = weatherInfo.main.temp;
       weatherType = weatherInfo.weather[0].main;
-      $(".weather").html(weatherType + "<br>" + (tempK - 273.15) + " °C <span onclick=\"exchangeTemp()\">to °F</span>");
+      $(".weather").html(weatherType + "<br>" + (Math.round(tempK - 273.15)) + " °C <span onclick=\"exchangeTemp()\">to °F</span>");
       var sunRise = weatherInfo.sys.sunrise * 1000;
       var sunSet = weatherInfo.sys.sunset * 1000;
       if (userTime < sunRise - halfHour || userTime > sunSet + halfHour) {
