@@ -61,3 +61,13 @@ td {
 td:nth-child(1) {
     min-width: 250px;
 }
+
+#error {
+    background-color: rgb(226, 181, 166);
+    border: 1px solid tomato;
+    border-radius: 5px;
+    position: absolute;
+    color: #444;
+    bottom: -60px;
+    padding: 5px 10px;
+}
