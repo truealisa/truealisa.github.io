@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pullZestimate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="search-form">
+        <label for="address">Address</label>
+        <input id="address" type="text" class="search" placeholder="Enter your address"><br>
+
+        <label for="city">City</label>
+        <input id="city" type="text" class="search" placeholder="Enter your city"><br>
+
+        <label for="state">State</label>
+        <input id="state" type="text" class="search" placeholder="Enter your state abbreviation"><br>
+
+        <label for="zip">ZIP Code</label>
+        <input id="zip" type="text" class="search" placeholder="Enter your ZIP Code"><br>
+
+        <button>Submit</button>
+    </form>
+
+    <div class="results">
+        <h1>
+            <p id="results-address"></p>
+            <p id="results-citystatezip"></p>
+        </h1>
+        <table>
+            <tr>
+                <td>Zestimate (in $):</td>
+                <td id="zestimate"></td>
+            </tr>
+            <tr>
+                <td>Last updated date:</td>
+                <td id="last-updated"></td>
+            </tr>
+            <tr>
+                <td>30-day change (in $):</td>
+                <td id="value-change"></td>
+            </tr>
+            <tr>
+                <td>Valuation range (high) (in $):</td>
+                <td id="valuation-range-high"></td>
+            </tr>
+            <tr>
+                <td>Valuation range (low) (in $):</td>
+                <td id="valuation-range-low"></td>
+            </tr>
+            <tr>
+                <td>Percentile Value:</td>
+                <td id="percentile"></td>
+            </tr>
+        </table>
+    </div>
+  <script src="fetchZillow.js"></script>
+</body>
+</html>
