@@ -5,7 +5,7 @@ const errorNotification = document.querySelector('#error');
 const addressPrefix = '&address=';
 const citystatezipPrefix = '&citystatezip=';
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
-let zestimate, lastUpdated, valueChange, valuationRangeHigh, valuationRangeLow, percentile, error;
+let zestimate, lastUpdated, valueChange, valuationRangeHigh, valuationRangeLow, error;
 
 function submit(e) {
     e.preventDefault();
@@ -48,7 +48,6 @@ function makeRequest(url) {
             valueChange = '$' + requestResult.querySelector("valueChange").innerHTML + " " + requestResult.querySelector("valueChange").attributes.currency.value;
             valuationRangeHigh = '$' + requestResult.querySelector("high").innerHTML + " " + requestResult.querySelector("high").attributes.currency.value;
             valuationRangeLow = '$' + requestResult.querySelector("low").innerHTML + " " + requestResult.querySelector("low").attributes.currency.value;
-            percentile = requestResult.querySelector("percentile").innerHTML;
         }
     }
     //display results
@@ -67,7 +66,7 @@ function displayResults() {
         results.querySelector('#value-change').innerHTML = numberWithCommas(valueChange);
         results.querySelector('#valuation-range-high').innerHTML = numberWithCommas(valuationRangeHigh);
         results.querySelector('#valuation-range-low').innerHTML = numberWithCommas(valuationRangeLow);
-        results.querySelector('#percentile').innerHTML = percentile;
+
         results.classList.add("displayed");
         //clear form
         searchForm.reset();
