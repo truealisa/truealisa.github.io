@@ -42,11 +42,12 @@ function makeRequest(url) {
                 return;
             }
         } else {
-            zestimate = '$' + requestResult.querySelector("amount").innerHTML;
+            console.dir(requestResult.querySelector("amount"));
+            zestimate = '$' + requestResult.querySelector("amount").innerHTML + " " + requestResult.querySelector("amount").attributes.currency.value;
             lastUpdated = requestResult.querySelector("last-updated").innerHTML;
-            valueChange = '$' + requestResult.querySelector("valueChange").innerHTML;
-            valuationRangeHigh = '$' + requestResult.querySelector("high").innerHTML;
-            valuationRangeLow = '$' + requestResult.querySelector("low").innerHTML;
+            valueChange = '$' + requestResult.querySelector("valueChange").innerHTML + " " + requestResult.querySelector("valueChange").attributes.currency.value;
+            valuationRangeHigh = '$' + requestResult.querySelector("high").innerHTML + " " + requestResult.querySelector("high").attributes.currency.value;
+            valuationRangeLow = '$' + requestResult.querySelector("low").innerHTML + " " + requestResult.querySelector("low").attributes.currency.value;
             percentile = requestResult.querySelector("percentile").innerHTML;
         }
     }
@@ -61,11 +62,11 @@ function displayResults() {
         //display results
         results.querySelector('#results-address').innerHTML = address.value;
         results.querySelector('#results-citystatezip').innerHTML = city.value + ', ' + state.value + ' ' + zip.value;
-        results.querySelector('#zestimate').innerHTML = zestimate;
+        results.querySelector('#zestimate').innerHTML = numberWithCommas(zestimate);
         results.querySelector('#last-updated').innerHTML = lastUpdated;
-        results.querySelector('#value-change').innerHTML = valueChange;
-        results.querySelector('#valuation-range-high').innerHTML = valuationRangeHigh;
-        results.querySelector('#valuation-range-low').innerHTML = valuationRangeLow;
+        results.querySelector('#value-change').innerHTML = numberWithCommas(valueChange);
+        results.querySelector('#valuation-range-high').innerHTML = numberWithCommas(valuationRangeHigh);
+        results.querySelector('#valuation-range-low').innerHTML = numberWithCommas(valuationRangeLow);
         results.querySelector('#percentile').innerHTML = percentile;
         results.classList.add("displayed");
         //clear form
@@ -75,6 +76,10 @@ function displayResults() {
         errorNotification.innerHTML = error;
         errorNotification.classList.remove('hidden');
     }
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 searchForm.addEventListener('submit', submit);
