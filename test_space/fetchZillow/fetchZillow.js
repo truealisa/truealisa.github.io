@@ -109,11 +109,11 @@ function displayResults() {
         //display comparables list
         comparablesArray.forEach(comparable => {
             var newLi = document.createElement("li");
-            newLi.innerHTML = `<a href="${comparable.children[1].children[0].textContent}">`
+            newLi.innerHTML = `<span>`
                             + comparable.children[2].children[0].textContent + '<br>' 
                             + comparable.children[2].children[2].textContent + ', '  
                             + comparable.children[2].children[3].textContent + ' '  
-                            + comparable.children[2].children[1].textContent + `</a>` + '<br>'
+                            + comparable.children[2].children[1].textContent + `</span>` + '<br>'
                             + 'Zestimate (in $): ' + numberWithCommas(comparable.children[3].children[0].textContent) + ' ' + comparable.children[3].children[0].attributes[0].textContent;
             results.querySelector("#comparables").appendChild(newLi);
             console.log(comparable);

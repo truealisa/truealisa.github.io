@@ -92,9 +92,8 @@ li {
     margin-bottom: 20px;
 }
 
-a {
+span {
     color: #00a2ff;
-    text-decoration: none;
 }
 
 #notification {
