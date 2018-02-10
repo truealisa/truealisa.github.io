@@ -35,15 +35,15 @@ var bgiDB = {
   },
   "showerRain":{
     "morning": "https://s8.hostingkartinok.com/uploads/images/2017/03/02fe77b4c4ae7e0f878bf1f19e1870b6.jpg",
-    "day": "https://s8.hostingkartinok.com/uploads/images/2017/03/711ea706c126922c24b5d0b59ac90885.jpg",
+    "day": "https://s8.hostingkartinok.com/uploads/images/2018/02/d371c8965c41ff186eda95cfab9a7014.jpg",
     "evening": "https://s8.hostingkartinok.com/uploads/images/2017/03/2d7e9d8d6d99e3c0a86c5bb413431c0d.jpg",
-    "night": "https://s8.hostingkartinok.com/uploads/images/2017/03/bb7571c70c542ec6c019eb7e7dab808d.jpg"
+    "night": "https://s8.hostingkartinok.com/uploads/images/2018/02/8bec0c19fb30e46f1fda756843faee97.jpg"
   },
   "rain":{
     "morning": "https://s8.hostingkartinok.com/uploads/images/2017/03/a0724ffa0a1472a57449f7fa5cd9c259.jpg",
     "day": "https://s8.hostingkartinok.com/uploads/images/2017/03/c3e99590bb1b5c1eae2467121fc4ae0f.jpg",
-    "evening": "https://s8.hostingkartinok.com/uploads/images/2017/03/ac2b33407e74a2fb15e08eeaf9785a3c.jpg",
-    "night": "https://s8.hostingkartinok.com/uploads/images/2017/03/40b0e52c7d6efd9ce70ad5d9a69419c6.jpg"
+    "evening": "https://s8.hostingkartinok.com/uploads/images/2018/02/03e3324441671bb4522d8449fe458317.jpg",
+    "night": "https://s8.hostingkartinok.com/uploads/images/2018/02/9647a879171a03069cbda676a43bd0ed.jpg"
   },
   "thunderstorm":{
     "morning": "https://s8.hostingkartinok.com/uploads/images/2017/03/d4f83fe8261eb55d70a97037c9a4c5ba.jpg",
