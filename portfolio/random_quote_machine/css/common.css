@@ -15,8 +15,9 @@ h1 {
   margin: auto 25% auto 0;
   float: right;
   position: relative;
-  background-image: url("http://thenehiphop.com/wp-content/uploads/2014/06/notebook-paper-background_2.png");
+  background-image: url(https://ya-webdesign.com/images250_/paper-notepad-png-2.png);
   background-repeat: no-repeat;
+  background-position: 30px;
   background-size: 100%;
 }
 
