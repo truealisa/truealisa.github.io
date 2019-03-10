@@ -16,7 +16,7 @@
     background: #fff;
     font-size: 0.7 * $base-font-size;
     padding: 1px 8px;
-    
+
     &:hover, &:focus {
         color: #666;
     }
@@ -43,7 +43,7 @@
     }
     .post-excerpt {
         &, * {
-            font-size: $small-font-size;
+            font-size: $base-font-size;
             padding-top: 0;
             padding-bottom: 0;
 	        color: #333;
