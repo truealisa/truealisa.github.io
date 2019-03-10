@@ -25,10 +25,12 @@ disqus_shortname: truealisa  # get one: https://disqus.com/admin/signup/
 
 excerpt_separator: <!--more-->
 
+include: ['_pages']
+
 header:
   links:             # Links on the header. Link to in-site page with a slash as prefix
+    Categories: /categories/
     About: /about/
-    Category: /category/
 
 permalink: /archivers/:title
 plugins:
