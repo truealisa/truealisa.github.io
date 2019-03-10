@@ -85,25 +85,27 @@ $hide-sidebar-screen-width: 1120px;
 .sub-header {
 	display: inline-block;
 	position: relative;
-	padding: 26px 23px 30px;
-	margin: 0 auto;
-	font-size: $base-font-size * 1.2;
-	font-style: italic;
-	color:#666;
-	&:after {
-		content: '';
-		display: inline-block;
-		position: relative;
-		top: 4px;
-		left: 7px;
-		height: 30px;
-		width: 30px;
-		background-image: url("../img/rock.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: right;
-		filter: contrast(20%);
-		-webkit-filter: contrast(20%);
+	p {
+		margin: 26px 23px 30px;
+		line-height: 2;
+		font-size: $base-font-size * 1.2;
+		font-style: italic;
+		color:#666;
+		&:after {
+			content: '';
+			display: inline-block;
+			position: relative;
+			top: 4px;
+			left: 7px;
+			height: 30px;
+			width: 30px;
+			background-image: url("../img/rock.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: right;
+			filter: contrast(20%);
+			-webkit-filter: contrast(20%);
+		}
 	}
 }
 
